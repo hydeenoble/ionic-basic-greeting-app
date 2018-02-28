@@ -15,10 +15,18 @@ export class HomePage {
 
   showGreeting(name: string){
     console.log(name);
-    this.toast.create({
-      message: `Hello ${name}`,
-      duration: 3000,
-    }).present();
+    if(name){
+      this.toast.create({
+        message: `Hello ${name}`,
+        duration: 3000,
+      }).present();
+    }else{
+      this.toast.create({
+        message: `Hello friend, Please enter your name for greetings!`,
+        duration: 3000,
+      }).present();
+    }
+
   }
 
 }
