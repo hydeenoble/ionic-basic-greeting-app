@@ -17,7 +17,7 @@ export class HomePage {
     console.log(name);
     if(name){
       this.toast.create({
-        message: `Hello ${name}`,
+        message: `Hello ${name}, How are you doing?`,
         duration: 3000,
       }).present();
     }else{
